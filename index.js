@@ -90,5 +90,9 @@ t2.to(".row-bottom",{
     ease: "linear",
 },'b')
 
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("loaded");
+    document.querySelector(".loader").style.display = "none";
+});
 
 
