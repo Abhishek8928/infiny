@@ -1,0 +1,86 @@
+
+*::selection{
+    background-color: salmon;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.video-container{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+
+@font-face {
+    font-family: 'NeueMachina';
+    src: url(./font/NeueMachina.woff);
+}
+@font-face {
+    font-family: 'NeueMachinaLight';
+    src: url(./font/NeueMachinaLight.woff);
+}
+
+@font-face {
+    font-family: 'SatoshiVariable';
+    src: url(./font/SatoshiVariable.ttf);
+}
+
+.font-neue{
+    font-family: 'NeueMachina', sans-serif;
+}
+.font-neue-light{
+    font-family: 'NeueMachinaLight', sans-serif;
+}
+.font-satoshi{
+    font-family: 'SatoshiVariable', sans-serif;
+}
+
+body[theme = "white"]{
+    background-color: white;
+}
+
+body[theme="black"]{
+    background-color: black !important;
+}
+
+body[theme="black"] .section .theme-secondary{
+    color:#d0d0d0;
+}
+
+body[theme="white"] .section .service-card-overlap> h3{
+    color:#fff;
+}
+body[theme="white"] .section .theme-secondary{
+    color:rgb(56, 56, 56);;
+}
+
+body[theme="white"] .section .card-theme{
+    background-color: #fff;
+    font-weight: 400;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+body[theme="black"] .section .card-theme{
+    background-color: #101010;
+}
+
+body[theme="black"] .section{
+    color:#fff;
+}
+body[theme="white"] .section{
+    color:#000;
+}
+
+.service-card-overlap {
+   
+    transition: bottom 0.3s ease-in-out;
+}
+
+.service-card:hover > .service-card-overlap{
+    bottom:0;
+}
+
+.fixed-con:hover > img{
+    transform: scale(1);
+}
