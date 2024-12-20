@@ -119,13 +119,14 @@ function ourTeamSectionAnimation() {
   const teamCards = document.querySelectorAll(".team-card");
 
   teamCards.forEach((card) => {
+    console.log(card)
     card.addEventListener("mousemove", function (event) {
       gsap.to(this.querySelector(".overlay-blue"), {
         height: "100%",
         ease: "linear",
       });
 
-      gsap.to(this.querySelector(".overlay-photo-showcase"), {
+      gsap.to(this.querySelector(".overlay-photo-showecase"), {
         opacity: 1,
         duration: 0.4,
         ease: "power2.inOut",
