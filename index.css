@@ -1,4 +1,17 @@
 
+:root{
+    --salmon:#EF9D71;
+    --black:#000;
+    --white:#fff;
+    --cyan:#AEDEE0;
+    --dsalmon:#532521;
+    --dcyan:#1f2f32;
+    --dblue:#2544EE
+}
+
+
+
+
 *::selection{
     background-color: salmon;
 }
@@ -36,51 +49,43 @@
     font-family: 'SatoshiVariable', sans-serif;
 }
 
-body[theme = "white"]{
-    background-color: white;
+body[theme = "light"]{
+    background-color: var(--white);
 }
 
-body[theme="black"]{
-    background-color: black !important;
+body[theme="dark"]{
+    background-color: var(--black) !important;
 }
 
-body[theme="black"] .section .theme-secondary{
-    color:#d0d0d0;
+body[theme="cyan"]{
+    background-color: var(--cyan);
 }
 
-body[theme="white"] .section .service-card-overlap> h3{
-    color:#fff;
-}
-body[theme="white"] .section .theme-secondary{
-    color:rgb(56, 56, 56);;
+body[theme="salmon"]{
+    background-color: var(--salmon);
 }
 
-body[theme="white"] .section .card-theme{
-    background-color: #fff;
+body[theme="dark"] .section{
+    color:var(--white);
+}
+body[theme="light"] .section{
+    color:var(--black);
+}
+body[theme="cyan"] .section{
+    color:var(--dcyan);
+}
+
+body[theme="salmon"] .section{
+    color:var(--dsalmon);
+}
+
+
+body[theme="light"] .section .card-theme{
+    background-color: var(--white);
     font-weight: 400;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
-body[theme="black"] .section .card-theme{
+body[theme="dark"] .section .card-theme{
     background-color: #101010;
-}
-
-body[theme="black"] .section{
-    color:#fff;
-}
-body[theme="white"] .section{
-    color:#000;
-}
-
-.service-card-overlap {
-   
-    transition: bottom 0.3s ease-in-out;
-}
-
-.service-card:hover > .service-card-overlap{
-    bottom:0;
-}
-
-.fixed-con:hover > img{
-    transform: scale(1);
 }

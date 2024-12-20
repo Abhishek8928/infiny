@@ -6,146 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="./toggle.css">
-    <title>Document</title>
-    <style>
-
-        /* From Uiverse.io by SelfMadeSystem */ 
-.absolute {
-  position: absolute;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-.loader {
-  display: flex;
-  margin: 0.25em 0;
-}
-
-.w-2 {
-  width: 0.5em;
-}
-
-.dash {
-  animation: dashArray 2s ease-in-out infinite,
-    dashOffset 2s linear infinite;
-}
-
-.spin {
-  animation: spinDashArray 2s ease-in-out infinite,
-    spin 8s ease-in-out infinite,
-    dashOffset 2s linear infinite;
-  transform-origin: center;
-}
-
-@keyframes dashArray {
-  0% {
-    stroke-dasharray: 0 1 359 0;
-  }
-
-  50% {
-    stroke-dasharray: 0 359 1 0;
-  }
-
-  100% {
-    stroke-dasharray: 359 1 0 0;
-  }
-}
-
-@keyframes spinDashArray {
-  0% {
-    stroke-dasharray: 270 90;
-  }
-
-  50% {
-    stroke-dasharray: 0 360;
-  }
-
-  100% {
-    stroke-dasharray: 270 90;
-  }
-}
-
-@keyframes dashOffset {
-  0% {
-    stroke-dashoffset: 365;
-  }
-
-  100% {
-    stroke-dashoffset: 5;
-  }
-}
-
-@keyframes spin {
-  0% {
-    rotate: 0deg;
-  }
-
-  12.5%,
-  25% {
-    rotate: 270deg;
-  }
-
-  37.5%,
-  50% {
-    rotate: 540deg;
-  }
-
-  62.5%,
-  75% {
-    rotate: 810deg;
-  }
-
-  87.5%,
-  100% {
-    rotate: 1080deg;
-  }
-}
-
-    </style>
+    <title>document</title>
+    
 </head>
 
-<body theme="black">
+<body theme="dark">
  
-<div class="loader w-full h-[102vh] fixed top-[0%] left-0 z-[12] bg-black flex justify-center items-center">
-  <svg height="0" width="0" viewBox="0 0 64 64" class="absolute">
-    <defs class="s-xJBuHA073rTt" xmlns="http://www.w3.org/2000/svg">
-      <linearGradient class="s-xJBuHA073rTt" gradientUnits="userSpaceOnUse" y2="2" x2="0" y1="62" x1="0" id="b">
-        <stop class="s-xJBuHA073rTt" stop-color="#973BED"></stop>
-        <stop class="s-xJBuHA073rTt" stop-color="#007CFF" offset="1"></stop>
-      </linearGradient>
-      <linearGradient class="s-xJBuHA073rTt" gradientUnits="userSpaceOnUse" y2="0" x2="0" y1="64" x1="0" id="c">
-        <stop class="s-xJBuHA073rTt" stop-color="#FFC800"></stop>
-        <stop class="s-xJBuHA073rTt" stop-color="#F0F" offset="1"></stop>
-        <animateTransform repeatCount="indefinite" keySplines=".42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1" keyTimes="0; 0.125; 0.25; 0.375; 0.5; 0.625; 0.75; 0.875; 1" dur="8s" values="0 32 32;-270 32 32;-270 32 32;-540 32 32;-540 32 32;-810 32 32;-810 32 32;-1080 32 32;-1080 32 32" type="rotate" attributeName="gradientTransform"></animateTransform>
-      </linearGradient>
-      <linearGradient class="s-xJBuHA073rTt" gradientUnits="userSpaceOnUse" y2="2" x2="0" y1="62" x1="0" id="d">
-        <stop class="s-xJBuHA073rTt" stop-color="#00E0ED"></stop>
-        <stop class="s-xJBuHA073rTt" stop-color="#00DA72" offset="1"></stop>
-      </linearGradient>
-    </defs>
-  </svg>
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64" height="64" width="64" class="inline-block">
-    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="8" stroke="url(#b)" d="M 54.722656,3.9726563 A 2.0002,2.0002 0 0 0 54.941406,4 h 5.007813 C 58.955121,17.046124 49.099667,27.677057 36.121094,29.580078 a 2.0002,2.0002 0 0 0 -1.708985,1.978516 V 60 H 29.587891 V 31.558594 A 2.0002,2.0002 0 0 0 27.878906,29.580078 C 14.900333,27.677057 5.0448787,17.046124 4.0507812,4 H 9.28125 c 1.231666,11.63657 10.984383,20.554048 22.6875,20.734375 a 2.0002,2.0002 0 0 0 0.02344,0 c 11.806958,0.04283 21.70649,-9.003371 22.730469,-20.7617187 z" class="dash" id="y" pathLength="360"></path>
-  </svg>
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" style="--rotation-duration:0ms; --rotation-direction:normal;" viewBox="0 0 64 64" height="64" width="64" class="inline-block">
-    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="10" stroke="url(#c)" d="M 32 32
-        m 0 -27
-        a 27 27 0 1 1 0 54
-        a 27 27 0 1 1 0 -54" class="spin" id="o" pathLength="360"></path>
-  </svg>
-  <div class="w-2"></div>
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" style="--rotation-duration:0ms; --rotation-direction:normal;" viewBox="0 0 64 64" height="64" width="64" class="inline-block">
-    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="8" stroke="url(#d)" d="M 4,4 h 4.6230469 v 25.919922 c -0.00276,11.916203 9.8364941,21.550422 21.7500001,21.296875 11.616666,-0.240651 21.014356,-9.63894 21.253906,-21.25586 a 2.0002,2.0002 0 0 0 0,-0.04102 V 4 H 56.25 v 25.919922 c 0,14.33873 -11.581192,25.919922 -25.919922,25.919922 a 2.0002,2.0002 0 0 0 -0.0293,0 C 15.812309,56.052941 3.998433,44.409961 4,29.919922 Z" class="dash" id="u" pathLength="360"></path>
-  </svg>
-</div>
+
 
     <div class="main">
         <!-- navbar section -->
         <div
-            class="section p-[3vw]  navbar absolute text-white top-0 flex justify-between items-center  left-0 w-full z-[6]">
+            class=" p-[3vw]  navbar absolute text-white top-0 flex justify-between items-center  left-0 w-full z-[6]">
             <h2 class="font-satoshi font-semibold text-[4vw] md:text-[1.6vw] ">InfinyWeb</h2>
 
             
@@ -156,296 +28,309 @@
 
         <!-- hero section -->
 
-        <div class="hero-container  relative w-full h-screen">
-            <div style="--clip: 75%" class="video-container absolute z-[4] top-0 left-0 section w-full h-full overflow-hidden">
-                <video autoplay muted loop class="w-full h-full object-cover"
-                    src="https://infinyweb.com/wp-content/uploads/2023/02/mixkit-colorful-design-on-tablet-921.mp4"></video>
-            </div>
+        <div data-color="dark" class="hero-container section  relative w-full h-[200vh]">
 
-            <div class="w-full h-full absolute top-0 left-0 z-[3] overflow-hidden">
-                <div
-                    class="w-[36vw]  md:w-1/5 short-tagline section text-center absolute top-[6%] text-[2vw] md:text-[1.2vw] font-satoshi left-1/2 -translate-x-1/2">
-                    <p>
-                        Turning Ideas into Scalable Products, <br />
-                        From Concept to Creation.
-                    </p>
+            <div class="w-full sticky h-screen top-0 left-0">
+
+                <div style="--clip: 75%" class="video-container absolute z-[4] top-0 left-0  w-full h-full ">
+                    <video autoplay muted loop class="w-full h-full object-cover"
+                        src="https://infinyweb.com/wp-content/uploads/2023/02/mixkit-man-moves-with-virtual-reality-glasses-267.mp4"></video>
                 </div>
 
-                <div
-                    class="row-marquee section absolute leading-none top-1/2 w-screen overflow-hidden -translate-y-1/2 font-neue">
-                    <div class="row left flex gap-[3vw] -translate-x-1/2 w-full">
-                        <div class="row-card flex items-center gap-[4vw]">
-                            <h2 class="  md:text-[5vw]  text-[8vw]">empathetic</h2>
 
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483195_Ellipse%20845.webp"
-                                    alt="" />
-                            </div>
-                        </div>
-
-                        <div class="row-card flex items-center gap-[4vw]">
-                            <h2 class="md:text-[5vw]  text-[8vw]">useful</h2>
-
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483184_Ellipse%20845.webp"
-                                    alt="" />
-                            </div>
-                        </div>
-
-                        <div class="row-card flex items-center gap-[4vw]">
-                            <h2 class="md:text-[5vw]  text-[8vw]">intuitive</h2>
-
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483188_Ellipse%20845-2.webp"
-                                    alt="" />
-                            </div>
-                        </div>
-
-                        <div class="row-card flex items-center gap-[4vw]">
-                            <h2 class="md:text-[5vw]  text-[8vw]">empathetic</h2>
-
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483189_Ellipse%20845-1.webp"
-                                    alt="" />
-                            </div>
-                        </div>
-
-                        <div class="row-card flex items-center gap-[4vw]">
-                            <h2 class="md:text-[5vw]  text-[8vw]">useful</h2>
-
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d348317e_Ellipse%20845-7.webp"
-                                    alt="" />
-                            </div>
-                        </div>
-
-                        <div class="row-card flex items-center gap-[4vw]">
-                            <h2 class="md:text-[5vw]  text-[8vw]">intuitive</h2>
-
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483188_Ellipse%20845-2.webp"
-                                    alt="" />
-                            </div>
-                        </div>
+                <div class="w-full h-full absolute top-0 left-0 z-[3] overflow-hidden">
+                    <div
+                        class="w-[36vw]  md:w-1/5 short-tagline  text-center absolute top-[6%] text-[2vw] md:text-[1.2vw] font-satoshi left-1/2 -translate-x-1/2">
+                        <p>
+                            Turning Ideas into Scalable Products, <br />
+                            From Concept to Creation.
+                        </p>
                     </div>
-
-                    <div class="row right flex gap-[3vw] -translate-x-[80%] w-full">
-                        <div class="row-card flex items-center gap-[4vw]">
-                            <h2 class="md:text-[5vw]  text-[8vw]">intuitive</h2>
-
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483188_Ellipse%20845-2.webp"
-                                    alt="" />
+    
+                    <div
+                        class="row-marquee  absolute leading-none top-1/2 w-screen overflow-hidden -translate-y-1/2 font-neue">
+                        <div class="row left flex gap-[3vw] -translate-x-1/2 w-full">
+                            <div class="row-card flex items-center gap-[6vw]">
+                                <h2 class="  md:text-[5vw]  text-[8vw]">empathetic</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483195_Ellipse%20845.webp"
+                                        alt="" />
+                                </div>
+                            </div>
+    
+                            <div class="row-card flex items-center gap-[2vw]">
+                                <h2 class="md:text-[5vw]  text-[8vw]">useful</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483184_Ellipse%20845.webp"
+                                        alt="" />
+                                </div>
+                            </div>
+    
+                            <div class="row-card flex items-center gap-[2vw]">
+                                <h2 class="md:text-[5vw]  text-[8vw]">intuitive</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483188_Ellipse%20845-2.webp"
+                                        alt="" />
+                                </div>
+                            </div>
+    
+                            <div class="row-card flex items-center gap-[2vw]">
+                                <h2 class="md:text-[5vw]  text-[8vw]">empathetic</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483189_Ellipse%20845-1.webp"
+                                        alt="" />
+                                </div>
+                            </div>
+    
+                            <div class="row-card flex items-center gap-[2vw]">
+                                <h2 class="md:text-[5vw]  text-[8vw]">useful</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d348317e_Ellipse%20845-7.webp"
+                                        alt="" />
+                                </div>
+                            </div>
+    
+                            <div class="row-card flex items-center gap-[2vw]">
+                                <h2 class="md:text-[5vw]  text-[8vw]">intuitive</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483188_Ellipse%20845-2.webp"
+                                        alt="" />
+                                </div>
                             </div>
                         </div>
-
-                        <div class="row-card flex items-center gap-[4vw]">
-
-                            <h2 class="md:text-[5vw]  text-[8vw]">empathetic</h2>
-
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483195_Ellipse%20845.webp"
-                                    alt="" />
+    
+                        <div class="row right flex gap-[3vw] -translate-x-[80%] w-full">
+                            <div class="row-card flex items-center gap-[2vw]">
+                                <h2 class="md:text-[5vw]  text-[8vw]">intuitive</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483188_Ellipse%20845-2.webp"
+                                        alt="" />
+                                </div>
+                            </div>
+    
+                            <div class="row-card flex items-center gap-[2vw]">
+    
+                                <h2 class="md:text-[5vw]  text-[8vw]">empathetic</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483195_Ellipse%20845.webp"
+                                        alt="" />
+                                </div>
+                            </div>
+    
+                            <div class="row-card flex items-center gap-[2vw]">
+                                <h2 class="md:text-[5vw]  text-[8vw]">useful</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483184_Ellipse%20845.webp"
+                                        alt="" />
+                                </div>
+                            </div>
+    
+                            <div class="row-card flex items-center gap-[2vw]">
+                                <h2 class="md:text-[5vw]  text-[8vw]">intuitive</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483188_Ellipse%20845-2.webp"
+                                        alt="" />
+                                </div>
+                            </div>
+    
+                            <div class="row-card flex items-center gap-[2vw]">
+                                <h2 class="md:text-[5vw]  text-[8vw]">empathetic</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d348317a_Ellipse%20845-10.webp"
+                                        alt="" />
+                                </div>
+                            </div>
+    
+                            <div class="row-card flex items-center gap-[2vw]">
+                                <h2 class="md:text-[5vw]  text-[8vw]">useful</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d348317e_Ellipse%20845-7.webp"
+                                        alt="" />
+                                </div>
+                            </div>
+    
+                            <div class="row-card flex items-center gap-[2vw]">
+                                <h2 class="md:text-[5vw]  text-[8vw]">intuitive</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483188_Ellipse%20845-2.webp"
+                                        alt="" />
+                                </div>
                             </div>
                         </div>
-
-                        <div class="row-card flex items-center gap-[4vw]">
-                            <h2 class="md:text-[5vw]  text-[8vw]">useful</h2>
-
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483184_Ellipse%20845.webp"
-                                    alt="" />
+    
+                        <div class="row left flex gap-[3vw] -translate-x-2/4 w-full">
+                            <div class="row-card flex items-center gap-[2vw]">
+                                <h2 class="md:text-[5vw]  text-[8vw]">empathetic</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483195_Ellipse%20845.webp"
+                                        alt="" />
+                                </div>
+                            </div>
+    
+                            <div class="row-card flex items-center gap-[2vw]">
+                                <h2 class="md:text-[5vw]  text-[8vw]">useful</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483184_Ellipse%20845.webp"
+                                        alt="" />
+                                </div>
+                            </div>
+    
+                            <div class="row-card flex items-center gap-[2vw]">
+                                <h2 class="md:text-[5vw]  text-[8vw]">intuitive</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483188_Ellipse%20845-2.webp"
+                                        alt="" />
+                                </div>
+                            </div>
+    
+                            <div class="row-card flex items-center gap-[2vw]">
+                                <h2 class="md:text-[5vw]  text-[8vw]">empathetic</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483189_Ellipse%20845-1.webp"
+                                        alt="" />
+                                </div>
+                            </div>
+    
+                            <div class="row-card flex items-center gap-[2vw]">
+                                <h2 class="md:text-[5vw]  text-[8vw]">useful</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d348317e_Ellipse%20845-7.webp"
+                                        alt="" />
+                                </div>
+                            </div>
+    
+                            <div class="row-card flex items-center gap-[2vw]">
+                                <h2 class="md:text-[5vw]  text-[8vw]">intuitive</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483188_Ellipse%20845-2.webp"
+                                        alt="" />
+                                </div>
                             </div>
                         </div>
-
-                        <div class="row-card flex items-center gap-[4vw]">
-                            <h2 class="md:text-[5vw]  text-[8vw]">intuitive</h2>
-
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483188_Ellipse%20845-2.webp"
-                                    alt="" />
+    
+                        <div class="row right flex gap-[3vw] -translate-x-3/4 w-full">
+                            <div class="row-card flex items-center gap-[2vw]">
+                                <h2 class="md:text-[5vw]  text-[8vw]">empathetic</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483195_Ellipse%20845.webp"
+                                        alt="" />
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="row-card flex items-center gap-[4vw]">
-                            <h2 class="md:text-[5vw]  text-[8vw]">empathetic</h2>
-
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d348317a_Ellipse%20845-10.webp"
-                                    alt="" />
+    
+                            <div class="row-card flex items-center gap-[2vw]">
+                                <h2 class="md:text-[5vw]  text-[8vw]">useful</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483184_Ellipse%20845.webp"
+                                        alt="" />
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="row-card flex items-center gap-[4vw]">
-                            <h2 class="md:text-[5vw]  text-[8vw]">useful</h2>
-
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d348317e_Ellipse%20845-7.webp"
-                                    alt="" />
+    
+                            <div class="row-card flex items-center gap-[2vw]">
+                                <h2 class="md:text-[5vw]  text-[8vw]">intuitive</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483181_Ellipse%20845-5.webp"
+                                        alt="" />
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="row-card flex items-center gap-[4vw]">
-                            <h2 class="md:text-[5vw]  text-[8vw]">intuitive</h2>
-
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483188_Ellipse%20845-2.webp"
-                                    alt="" />
+    
+                            <div class="row-card flex items-center gap-[2vw]">
+                                <h2 class="md:text-[5vw]  text-[8vw]">empathetic</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483189_Ellipse%20845-1.webp"
+                                        alt="" />
+                                </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="row left flex gap-[3vw] -translate-x-2/4 w-full">
-                        <div class="row-card flex items-center gap-[4vw]">
-                            <h2 class="md:text-[5vw]  text-[8vw]">empathetic</h2>
-
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483195_Ellipse%20845.webp"
-                                    alt="" />
+    
+                            <div class="row-card flex items-center gap-[2vw]">
+                                <h2 class="md:text-[5vw]  text-[8vw]">useful</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483183_Ellipse%20845-6.webp"
+                                        alt="" />
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="row-card flex items-center gap-[4vw]">
-                            <h2 class="md:text-[5vw]  text-[8vw]">useful</h2>
-
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483184_Ellipse%20845.webp"
-                                    alt="" />
-                            </div>
-                        </div>
-
-                        <div class="row-card flex items-center gap-[4vw]">
-                            <h2 class="md:text-[5vw]  text-[8vw]">intuitive</h2>
-
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483188_Ellipse%20845-2.webp"
-                                    alt="" />
-                            </div>
-                        </div>
-
-                        <div class="row-card flex items-center gap-[4vw]">
-                            <h2 class="md:text-[5vw]  text-[8vw]">empathetic</h2>
-
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483189_Ellipse%20845-1.webp"
-                                    alt="" />
-                            </div>
-                        </div>
-
-                        <div class="row-card flex items-center gap-[4vw]">
-                            <h2 class="md:text-[5vw]  text-[8vw]">useful</h2>
-
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d348317e_Ellipse%20845-7.webp"
-                                    alt="" />
-                            </div>
-                        </div>
-
-                        <div class="row-card flex items-center gap-[4vw]">
-                            <h2 class="md:text-[5vw]  text-[8vw]">intuitive</h2>
-
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483188_Ellipse%20845-2.webp"
-                                    alt="" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row right flex gap-[3vw] -translate-x-3/4 w-full">
-                        <div class="row-card flex items-center gap-[4vw]">
-                            <h2 class="md:text-[5vw]  text-[8vw]">empathetic</h2>
-
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483195_Ellipse%20845.webp"
-                                    alt="" />
-                            </div>
-                        </div>
-
-                        <div class="row-card flex items-center gap-[4vw]">
-                            <h2 class="md:text-[5vw]  text-[8vw]">useful</h2>
-
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483184_Ellipse%20845.webp"
-                                    alt="" />
-                            </div>
-                        </div>
-
-                        <div class="row-card flex items-center gap-[4vw]">
-                            <h2 class="md:text-[5vw]  text-[8vw]">intuitive</h2>
-
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483181_Ellipse%20845-5.webp"
-                                    alt="" />
-                            </div>
-                        </div>
-
-                        <div class="row-card flex items-center gap-[4vw]">
-                            <h2 class="md:text-[5vw]  text-[8vw]">empathetic</h2>
-
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483189_Ellipse%20845-1.webp"
-                                    alt="" />
-                            </div>
-                        </div>
-
-                        <div class="row-card flex items-center gap-[4vw]">
-                            <h2 class="md:text-[5vw]  text-[8vw]">useful</h2>
-
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483183_Ellipse%20845-6.webp"
-                                    alt="" />
-                            </div>
-                        </div>
-
-                        <div class="row-card flex items-center gap-[4vw]">
-                            <h2 class="md:text-[5vw]  text-[8vw]">intuitive</h2>
-
-                            <div class="size-[5vw] overflow-hidden md:size-[3vw]">
-                                <img class="w-full h-full"
-                                    src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483188_Ellipse%20845-2.webp"
-                                    alt="" />
+    
+                            <div class="row-card flex items-center gap-[2vw]">
+                                <h2 class="md:text-[5vw]  text-[8vw]">intuitive</h2>
+    
+                                <div class="size-[5vw] overflow-hidden md:size-[3vw]">
+                                    <img class="w-full h-full"
+                                        src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d3483188_Ellipse%20845-2.webp"
+                                        alt="" />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="section absolute bottom-[4%] left-[2vw] z-[5] font-satoshi text-[2.8vw] md:text-[1.2vw] font-semibold leading-none">
-                <small>Futuristic, cutting-edge technology. <br />
-                    Light-weight, aesthetic desings. <br />
-                    smart scalable product devlopment.</small>
+                <div class=" absolute bottom-[4%] left-[2vw] z-[5] font-satoshi text-[2.8vw] md:text-[1.2vw] font-semibold leading-none">
+                    <small>Futuristic, cutting-edge technology. <br />
+                        Light-weight, aesthetic desings. <br />
+                        smart scalable product devlopment.</small>
+                </div>
+
+
+
             </div>
+            
+
+           
+
+            
         </div>
 
         <!--craft section -->
 
-        <div class=" w-full   px-[2vw] py-[2vw]  ">
+        <div data-color="cyan" class=" w-full section   px-[2vw] py-[2vw]  ">
 
-            <div class="w-full   craft relative section flex flex-col md:flex-row items-start justify-between ">
+            <div class="w-full   craft relative  flex flex-col md:flex-row items-start justify-between ">
 
                 <div class="craft-left w-full my-[6vw] md:mb-0  md:w-[40%]  relative top-0 md:sticky md:top-[6vw] left-0">
 
@@ -459,21 +344,22 @@
                     <h2 class="py-[4vw] font-neue-light font-light text-[6vw] md:text-[4vw] leading-[6vw] md:leading-[4vw]">From ideas to products, at
                         scale.</h2>
 
-                    <div class="masker border-[1px] w-fit py-[1vw] px-[2vw]">
+                    <div class="masker w-fit px-[2vw]  border-[1px] py-[1vw] ">
 
-                        <small>Our Solution</small>
+                        <small class=" ">Our Solution</small>
+                       
                     </div>
 
 
                 </div>
 
-                <div class="craft-right w-full md:w-1/2 gap-[8vw]  flex flex-col gap-[4vw] items-center">
+                <div class="craft-right w-full md:w-1/2  md:gap-[4vw]  flex flex-col gap-[4vw] items-center">
 
                     <div class="purpose-card  p-[1.6vw] flex justify-between border-[1px] w-[100%] md:w-[60%]">
 
                         <div class="purpose-card-left font-satoshi  w-[70%]">
                             <h3 class="text-[4vw] md:text-[1.6vw] font-bold">Driven by Purpose</h3>
-                            <p class="text-[2vw] md:text-[0.9vw] pt-[1.4vw]">We believe technology can
+                            <p class="text-[2vw] md:text-[0.9vw] font-semibold  pt-[1.4vw]">We believe technology can
                                 dramatically improve the experience
                                 of managing health, and — when
                                 crafted with empathy, intention, and
@@ -508,7 +394,7 @@
 
                         <div class="purpose-card-left font-satoshi  w-[70%]">
                             <h3 class="text-[4vw] md:text-[1.6vw] font-bold">Custom Products</h3>
-                            <p class=" text-[2vw] md:text-[0.9vw] pt-[1.4vw]">We build mobile and web-based apps,
+                            <p class=" text-[2vw] md:text-[0.9vw] font-semibold  pt-[1.4vw]">We build mobile and web-based apps,
                                 platforms, and infrastructure fitted to your
                                 needs. We have an open solutions
                                 framework, so we work to fit your business,
@@ -564,7 +450,7 @@
 
                         <div class="purpose-card-left font-satoshi  w-[70%]">
                             <h3 class="text-[4vw] md:text-[1.6vw] font-bold">Partnerships</h3>
-                            <p class="text-[2vw] md:text-[0.9vw] pt-[1.4vw]">We work with payers, providers, and
+                            <p class="text-[2vw] font-semibold md:text-[0.9vw] pt-[1.4vw]">We work with payers, providers, and
                                 pharma to help internal teams
                                 through ground-up builds, product
                                 optimizations, and streamlining
@@ -659,15 +545,17 @@
 
         </div>
 
+        
+
         <!-- service section -->
 
-        <div class="w-full  section mt-[4vw]  px-[2vw] py-[2vw]">
+        <div data-color="black" class="w-full  section mt-[4vw]  px-[2vw] py-[2vw]">
 
 
 
 
             <h2 class="py-[4vw] text-center font-neue text-[4.4vw] md:text-[3vw]">Our Services</h2>
-            <div class="section flex justify-between flex-wrap md:flex-nowrap gap-6  w-full">
+            <div class=" flex justify-between flex-wrap md:flex-nowrap gap-6  w-full">
 
 
 
@@ -677,9 +565,9 @@
                         src="https://s3-alpha-sig.figma.com/img/30d2/9a8c/69735fc3debe66e5da8a6af8e82ed2c9?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=daLoYFxxUOk5cW6qA1IwSzNgHTuJJ8og5jeRcU1FmX5qODE~T4EF3ypyf-cYmbb6I9HrxQzP1-QYyobhOv6gJDpjwkYNtn9MZn~hLeOIqTh~rB7E7AhfJleIzmUu9fOZZrcp28qHlCAHe66ymiUurNlxkjhShhHrTiLwhu4WJ0KWhKXZGLFiV0mRz3FbSIsIku999UP4gd69MWEve-OB56bL5S90uwJ-pDxAzNe3hi3blEGFzAa0Wc9D0CYm7OeysrE5PJ-Tyu8ayLBDiZLvmsHMGUMWD3av8rl~84dmwPQxJdoRlD9GL5YMjGcQLe1ER3qP1RLBbLoLCAcF7qeQ-A__"
                         alt="">
 
-                    <div class="service-card-overlap p-[2vw] md:p-[0.8vw] absolute w-full left-0 -bottom-[100%] bg-[rgba(0,0,0,0.4)] ">
+                    <div class="service-card-overlap p-[2vw] md:p-[0.8vw] absolute w-full left-0 bottom-0 bg-[rgba(0,0,0,0.4)] ">
 
-                        <h3 class="font-neue text-[4vw] md:text-[1.4vw]">Product strategy & design</h3>
+                        <h3 class="font-neue text-white text-[4vw] md:text-[1.4vw]">Product strategy & design</h3>
                         <p class=" text-[2.2vw]  md:text-[1vw] font-semibold text-[#d4d4d4]">A huge portion of business success comes from striking the right balance between the
                             products’ offerings and consumer behavior. Our team of product strategists, project managers
                             and UX designers work together to build the roadmap that leads you to glory.
@@ -699,9 +587,9 @@
                         src="https://s3-alpha-sig.figma.com/img/1f2a/9140/6e5afb8cccf84e4a8fc5c82a357d467f?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MC0ru8tmJoninMc9rkRugb2utEoApSyHtlXZSr5NZMPI5JN7h~Td0DkhFp~On6ibg4Eff1zIU7HlfH19A7Za4Hdtr6qfI57v7wujy8Wi9bUQcDBIHEFSIaX3BJhHqaZl19em29Z1KVsAc2f1HFNjyWKCIFOimuutGWujJjG~4h2fYhlMuyEUYe7Eb-OO4GtuvhV9kmm~wRiZrTtTRDM6ZfDWAYGzt7He3xJXT1IkbOyQ686cC5d3wRiVGtt1DPsqG3HmrXdl1yDwllJWWfahPBrXjMoii28ZjsbPRapD~y6LficyAFt~WwiGF9cSY78rNYE1wXvRGvygilAY9voTYQ__"
                         alt="">
 
-                    <div class="service-card-overlap p-[2vw] md:p-[0.8vw] absolute w-full left-0 -bottom-[100%] bg-[rgba(0,0,0,0.4)] ">
+                    <div class="service-card-overlap p-[2vw] md:p-[0.8vw] absolute w-full left-0 bottom-0 bg-[rgba(0,0,0,0.4)] ">
 
-                        <h3 class="font-neue text-[4vw] md:text-[1.4vw]">Web & mobile app development</h3>
+                        <h3 class="font-neue text-white text-[4vw] md:text-[1.4vw]">Web & mobile app development</h3>
                         <p class="md:text-[1vw] text-[2.2vw] font-semibold text-[#d4d4d4]">Not every problem in the world is solved by off-the-shelf solutions like Shopify or WordPress. We follow a proven methodology to build smart and custom solutions on iOS, Android and web. Our backend engineers and app developers are at the heart of it.
 
 
@@ -722,9 +610,9 @@
                         src="https://s3-alpha-sig.figma.com/img/286a/3c59/5da14b44f16d29528d71e86dfc074080?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UiMXuRH4GU0JDHq3NOcHZLMhXnoF-sSePaJBQ1GcRuR0GEOrcQvSBHttzYrWVKBxE-GSnIpyZBNqqDBtMwypuydaC92kje3mqgd0tFqwcvA2DT1d3LTfMvj2l20PhfnucEzNA1X-p2hYjmE3R-IgW31dJFBtFgiRJSgd9QngwCLhKU6ErAJ0Hon9JL7sNdQwy8Ygx3AZgBDoNyYt9P-B0URs3U4gQYhFOqZ2ByKXHQlcKmm9CUWjBh2enNJrB3MTGD3zNSM9u8ey6~0PWzCUoO1d6Gd5vmN2YqUTkAbWmeQm6mNq~HFaPPPLej0N7to6akleeZ4UomkFH5VTRB8Xwg__"
                         alt="">
 
-                    <div class="service-card-overlap p-[2vw] md:p-[0.8vw] absolute w-full left-0 -bottom-[100%] bg-[rgba(0,0,0,0.4)] ">
+                    <div class="service-card-overlap p-[2vw] md:p-[0.8vw] absolute w-full left-0 -bottom-0 bg-[rgba(0,0,0,0.4)] ">
 
-                        <h3 class="font-neue text-[4vw] md:text-[1.4vw]">Data science & cloud engineering</h3>
+                        <h3 class="font-neue text-white text-[4vw] md:text-[1.4vw]">Data science & cloud engineering</h3>
                         <p class="md:text-[1vw] text-[2.2vw] font-semibold text-[#d4d4d4]">Launching a web or a mobile app is not the final destination; it is sustaining the workload and fulfilling the demands imposed by the user base. Post deployment – sustainability, security and scalability are the three pillars of a successful product. We’ve got your back with our ever-so-reliable experts!
 
 
@@ -747,9 +635,9 @@
                         src="https://images.unsplash.com/photo-1690046793216-f66a0f01d5e6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="">
 
-                    <div class="service-card-overlap p-[2vw] md:p-[0.8vw] absolute w-full left-0 -bottom-[100%] bg-[rgba(0,0,0,0.4)]  ">
+                    <div class="service-card-overlap p-[2vw] md:p-[0.8vw] absolute w-full left-0 bottom-0 bg-[rgba(0,0,0,0.4)]  ">
 
-                        <h3 class="font-neue text-[4vw] md:text-[1.4vw]">User Interface Design </h3>
+                        <h3 class="font-neue text-[4vw] text-white md:text-[1.4vw]">User Interface Design </h3>
                         <p class="text-[2.2vw] md:text-[1vw] font-semibold text-[#d4d4d4]">Learn the principles of UI design, including color theory, typography, and layout. Gain hands-on experience with Figma. 
 
 
@@ -774,409 +662,250 @@
 
         </div>
 
+
+        <div data-color="dark" class="w-full tagline h-screen flex justify-center items-center  section px-[2vw] py-[2vw]">
+
+            <div class="tagline-wrapper w-full break-normal">
+
+
+                <p class="border-b-[1px] pb-[1.2vw] border-zinc-200">
+                    <span class="text-[1.8vw]  font-neue-light">We operate on a simple philosophy: <br> Quality over quantity.</span>
+                </p>
+    
+                <p class="text-[4vw] white-space-normal  tagline-describe  leading-none py-[1.6vw] font-satoshi">
+    
+                    We partner with up to 5 clients each year. This allows intense focus on the transformation and launch of your brand by our very best team, which is the only team we have.  We specialize in working with startups that are revolutionizing their industries.
+    
+    
+    
+                </p>
+            </div>
+
         
 
-        <div class="w-full px-[2vw] section py-[2vw]">
-
-            <h2 class="py-[4vw] text-center font-neue text-[4.4vw] md:text-[3vw]">Testimonials From Satisfied User</h2>
+            
 
 
+        </div>
+        
 
-            <div class="testimonial relative overflow-hidden   flex  justify-center gap-[2vw]">
+        
 
-                <div class="w-full h-full  absolute bg-gradient-to-t from-black via-transparent to-transparent z-[30] top-0 left-0 "></div>
 
-                <div class="testimonial-row hidden md:visible row-top w-[30%] md:w-[25%]">
 
-                    <div class="testimonial-card mb-[1.2vw] card-theme p-[1vw] rounded-lg">
-                        <div class="testimonial-user-profile leading-none items-center flex gap-3">
-                            <img class=" size-[5vw] md:size-[3vw] object-cover rounded-full" src="https://s3-alpha-sig.figma.com/img/b5fc/0f77/3a0db81d2a7ececbea248678ecd8600d?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jt75-BXqNR0PyoIj3Y5VmhX6yF4e9jE7B26GzfPs75KtwbGUTb6zbpHJV2Rleosgag2ja8H56WvtWc9k814TeD4LJVW6502IhlZq872ljIBT4w2zsauYYp~XqxyhH-TIh1oqgPI~bLwYuyG5ZVInYtrlX7xrSA4Iw~IxzFJryAbB4EyBSUTaDMqj6itqTWk3U7ln1WfyduJbgz9nhUlpEemK~XqZI7aYPYueIig20nOtPcPfe9Da8h7ipZiQJ2ERz4JzmI-VT7aZRMj9issDDYbGY9bCE2kCdYO9ZWta-X5SLSQ9U2kraT4TC701SRz0ZLUxTtUyPYr~r6pO28YYZg__" alt="">
-                            <div class="testimonial-user-info">
-                                <h2 class="text-[2vw] md:text-[1vw] font-neue">Jayanita Das</h2>
-                                <small class="text-xs pt-[0.2vw]">Mumbai</small>
+
+
+
+
+
+
+        <div data-color="salmon" class="w-full section  py-[2vw]">
+
+
+                <div class="real w-full  h-[300vh]  relative">
+
+                    <div class="slides   overflow-hidden h-screen  sticky top-0 left-0  w-full   flex">
+
+                        <div class="slide flex-shrink-0 w-full relative  h-screen ">
+
+                            <img class="size-[18vw] absolute top-1/2 -translate-y-1/2 right-0 translate-x-1/2 rounded-full object-cover" src="https://i.pinimg.com/736x/47/62/f6/4762f6b76f4c54cd511852bcdde0bd81.jpg" alt="">
+
+                            <h2 class="font-neue text-[4vw] md:text-[4vw] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Smart Scalable, <br> Product Development </h2>
+
+
+
+
+                        </div>
+                        <div class="slide flex-shrink-0 w-full flex relative justify-center items-center h-screen ">
+
+                            <div>
+                                <p class="font-satoshi text-[3vw] md:text-[1.2vw] md:w-1/5 w-[50%]
+                                 leading-none top-[2%] right-[-50%] md:right-[4%] absolute font-semibold">We’re on a mission to impact as many lives as possible and build a better company while we do it. Here’s our progress.</p>
+                            </div>
+
+                            <div class="size-[14vw] absolute top-[4%] left-[10%] overflow-hidden">
+
+                                <img class="w-full h-full object-cover rounded-full " src="https://i.pinimg.com/736x/af/e9/7a/afe97a2b99e1a882ac7ef53ad71f5d02.jpg" alt="">
+                            </div>
+
+                            <div class="size-[10vw] absolute bottom-[5%] left-[40%] overflow-hidden">
+
+                                <img class="w-full h-full  object-cover rounded-full " src="https://i.pinimg.com/736x/d3/da/ac/d3daac4ff0d02d5cd94bd3bb261a84f8.jpg" alt="">
+                            </div>
+
+                            <div class="size-[10vw] absolute -translate-y-1/2 translate-x-1/2  right-0 top-1/2 overflow-hidden">
+
+                                <img class="w-full h-full  object-cover rounded-full " src="https://i.pinimg.com/736x/de/10/47/de10474611a8c0e62bfde9cc0f10fac8.jpg" alt="">
+                            </div>
+
+                            <div class="w-[60%]  font-neue text-center ">
+                               <h2 class="text-[8vw] leading-none text-white"> 20.4k</h2>
+                               <p class="text-[3vw] md:text-[2vw]">Every project begins with an idea and ends with a solution, making the world a better place.</p>
 
                             </div>
-                        </div>
 
-                        <div class="testimonial-user-review text-justify theme-secondary mt-10">
 
-                            <p class="text-[1vw] font-satoshi">“I took the Web Development Bootcamp, and it transformed my career. The curriculum was comprehensive, covering everything from HTML to advanced JavaScript frameworks.”</p>
-                        </div>
-                    </div>
+                        </div> 
+                        <div class="slide flex-shrink-0 relative flex justify-center items-center w-full h-screen">
 
-                    <div class="testimonial-card mb-[1.2vw] card-theme p-[1vw] rounded-lg">
-                        <div class="testimonial-user-profile leading-none items-center flex gap-3">
-                            <img class="size-[3vw] object-cover rounded-full" src="https://s3-alpha-sig.figma.com/img/ede0/4cbf/4981ffbae81185e76307244a26f88fc9?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OHqWL4cISgiwvayeSihNT8-IWzUdsiGmlLx6O5Ml8XQ0FhanpD1ankf~6XOOXNX-CT86-XBPgZ7QgnFWC0nHgtC~b9FUHOdabf9xB8iwFZgkWTw8ummSI1h-4IeNIOcqjZUE3O7OhZsELL4SZsZBmJS-doEuj3WHNhin06bRxcPru~zL8y1L9SLodNhXGZxx7bMsS-aydazlJe6V0BVTCVceKvKqsReKpJ7SfPmovw6NlJhOSEHhGoJggJlF~nbp8h4d9SZOHP6UjxoGqaC4BvoOqlhHnr9L7fnz7w4n7TlfqYf8nHBMmqMD5MPrIt8~S9243vBsmgyZxPjHix0prA__" alt="">
-                            <div class="testimonial-user-info">
-                                <h2 class="text-[1vw] font-neue">Hirak</h2>
-                                <small class="text-xs pt-[0.2vw]">Delhi</small>
-
+                            <div class="img absolute w-[20vw] bottom-0 left-[10%]">
+                                <img src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/65ea1b841fcd9f50115dbe9c_RocketLaunch.webp" alt="">
                             </div>
-                        </div>
 
-                        <div class="testimonial-user-review text-justify theme-secondary mt-10">
-
-                            <p class="text-[1vw] font-satoshi">“I took the Web Development Bootcamp, and it transformed my career. The curriculum was comprehensive, covering everything from HTML to advanced JavaScript frameworks.”</p>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card mb-[1.2vw] card-theme p-[1vw] rounded-lg">
-                        <div class="testimonial-user-profile leading-none items-center flex gap-3">
-                            <img class="size-[3vw] object-cover rounded-full" src="https://s3-alpha-sig.figma.com/img/976f/1021/85d41ec8a2553bd858cd91ae8bfc8a61?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cbSMR-bVBpAJxIB3jc5-Qn-RWufQIzzMd1OoqLJ7BNlIEchzxBUWAwJf5QESluwLxMXOqBflSuRmnluiLDjK~sv132cKPneFC8hY2LVVxNDg-SYdVrojHP3EBfn3VZ1p36NDOYejERcFW1HqOkQmvWRDSNTQMN4CAOnQWkGz2BdwSfRoMZcmdC~MVJeU3NO6maikdREa4hm44x~0WAhrwTyPaCKcakOoF1aXP6tSxjchYcwXwbK6sLJgQ9bfDIv7Kr8Oo-vRHHcK-1DIbA6c19zsIXlegMAeBbrjoicWywY1fvY0sfNkKW8zDqPhB~M45E0sn1r-Hep2j0vSpCWieg__" alt="">
-                            <div class="testimonial-user-info">
-                                <h2 class="text-[1vw] font-neue">Rajesh S</h2>
-                                <small class="text-xs pt-[0.2vw]">Bangalore</small>
-
+                            <div class="img absolute w-[20vw] top-[10%] right-[10%]">
+                                <img src="https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/65ea1ba6eb9637155282b42f_Lightning.webp" alt="">
                             </div>
-                        </div>
 
-                        <div class="testimonial-user-review text-justify theme-secondary mt-10">
+                           
 
-                            <p class="text-[1vw] font-satoshi">“Infiny Solutions offers excellent growth opportunities with a focus on skill development. The team is collaborative, and the work environment is supportive. However, project deadlines can sometimes be tight, causing occasional stress.”</p>
+                            <div class="w-[60%]  font-neue text-center ">
+                                <h2 class="text-[8vw] leading-none text-white"> 99.99%</h2>
+                                <p class="text-[3vw] md:text-[2vw]">Satisfaction – Excellence in Every Step</p>
+ 
+                             </div>
+
                         </div>
+                        
                     </div>
-
-                </div>
-
-                <div class="testimonial-row  white-space-nowrap row-bottom translate-y-[20%] w-[30%] md:w-[25%]">
-
-                    <div class="testimonial-card mb-[1.2vw] card-theme p-[1.4vw] md:p-[1vw] rounded-lg">
-                        <div class="testimonial-user-profile leading-none items-center flex gap-3">
-                            <img class=" size-[5vw] md:size-[3vw] object-cover rounded-full" src="https://s3-alpha-sig.figma.com/img/e034/55c4/1bce86fd0855d1ce39228243470bad27?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VLlyIKjldEeqAxyHoL91yQt9yjHixZRDQZK6v7AKCLbwxsqUZllFdqP6-l84~ZKGW-o4-1ylNQwgDz-WRojk1-RVOlkVIu4F8wFjMPo~lxTRglNy7cgi94eORoSni8OEW69h0sdpkObThJAiBqrqYrEUfxpMQzgJj8UvQmyJhUe9IHqCl-f8nMrU2ynBn8YVp2Db-I5gp4D8mJpcbgEKsMgAAUIySScBT8g7hNdm~Wywx~Us5acDDaigaHcyXeIYJl0OBmkhv39CtG9lg2oD~Ge0H0~wzNmbOHdPr~8h2T~pG8qaCJ7TfNrbt7Um0Qdvlyz~jA6svxpixStap6D~UQ__" alt="">
-                            <div class="testimonial-user-info">
-                                <h2 class="text-[2vw] md:text-[1vw] font-neue">Anjali P.</h2>
-                                <small class="text-xs pt-[0.2vw]">Assam</small>
-
-                            </div>
-                        </div>
-
-                        <div class="testimonial-user-review text-justify theme-secondary mt-10">
-
-                            <p class="text-[1.8vw] md:text-[1vw] font-satoshi">“We hired Infiny Solutions to develop our e-commerce platform, and they did an outstanding job. The team was professional, and the project was completed on time. They provided great support even after the launch, ensuring everything ran smoothly. Highly recommended for web development and digital solutions!”</p>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card mb-[1.2vw] card-theme p-[1.4vw] md:p-[1vw] rounded-lg">
-                        <div class="testimonial-user-profile leading-none items-center flex gap-3">
-                            <img class="size-[5vw] md:size-[3vw] object-cover rounded-full" src="https://s3-alpha-sig.figma.com/img/ad68/4367/4ac4714b3b3620d1bd79c7c15f96f981?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ByIgSEGXTaQUv5Ei4~ym3Gm9XcnDmASGRbWIrJcX3l16oM64Tc7RhsXEyh3fMREDAzyiwSHke~foQVlAlmEaAcvRxzD~03SyGR2Jdu-kjdQkSEQBaUqP4~-pD3u2O0fcWJ0HWm05CBsjXKR3jKkmmZ4Y5MuXHq2z0Pye8FRVWrSZEf9kgj5geVGd6bmJ~BOm36uPhO698OZLLNgOVZuLJNKC20m0gEN2~wRCei0zQAv-zPuxXGUlFLBgK5gYuowCcKqXiQAhnreOe44Pg5vANqaG-JVwiDxH6Z-ZvpXAfX1WEScIkGFhgDunCLJJgahQRRiGN-u5p~53gnJ590nXAQ__" alt="">
-                            <div class="testimonial-user-info">
-                                <h2 class="text-[2vw] md:text-[1vw] font-neue">Abhishek Rathor</h2>
-                                <small class="text-xs pt-[0.2vw]">Delhi</small>
-
-                            </div>
-                        </div>
-
-                        <div class="testimonial-user-review text-justify theme-secondary mt-10">
-
-                            <p class="text-[1.8vw] md:text-[1vw] font-satoshi">“Infiny Solutions delivered a solid app for our business. The development process was smooth, but we faced delays in response times during certain phases. While the final product was good, communication could be better. Overall, decent service.”</p>
-                        </div>
-                    </div>
-
-                    
-
-                    <div class="testimonial-card mb-[1.2vw] card-theme p-[1.4vw] md:p-[1vw] rounded-lg">
-                        <div class="testimonial-user-profile leading-none items-center flex gap-6">
-                            <img class="size-[5vw] md:size-[3vw] object-cover rounded-full" src="https://s3-alpha-sig.figma.com/img/78d0/ac91/7379ad5470098ba8eff3e753ea2ccb6d?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GmsFEaP7qFn-j1Ff73UPrJFAniTriZajEAhfrYmqnQ-Jg9XtzGqeJhPXHVejtaZlQ9LRMLXCGSSkDzdl6WL-HOYEdgsHBTVQLQWPlu3CZ7oElQ-j-hNEwqxI5DHh2OqFoxLyk7nDQ0n2qCcA7OjL8k8kJPJCU-5duRY4C5VCOHL3B-tg20kJA-L4zjYueuOcKG6slK9kpnbCa6xNXCg1aYV~kjyTLuU8R5XwCQETzuJm3vb9~kM7dJ91tpKGJ1TJkbV9tSz6jYYUjol-aeb43uBjsxy3Tb7EHcY4mrAxmoj-UQt0tdfYOicJJykpyXLS0cofp-scWSJYZec5MYBmpg__" alt="">
-                            <div class="testimonial-user-info">
-                                <h2 class=" text-[2vw] md:text-[1vw] font-neue">Anuranbani Phukan</h2>
-                                <small class="text-xs pt-[0.2vw]">Mumbai</small>
-
-                            </div>
-                        </div>
-
-                        <div class="testimonial-user-review text-justify theme-secondary mt-10">
-
-                            <p class=" text-[1.8vw]  md:text-[1vw] font-satoshi">“I took the Web Development Bootcamp, and it transformed my career. The curriculum was comprehensive, covering everything from HTML to advanced JavaScript frameworks.”</p>
-                        </div>
-                    </div>
-
-                    
-
-
-                    
-
-
-                </div>
-
-                <div class="testimonial-row  row-top w-[30%] md:w-[25%]">
-
-                    <div class="testimonial-card mb-[1.2vw] card-theme p-[1.4vw] md:p-[1vw] rounded-lg">
-                        <div class="testimonial-user-profile leading-none items-center flex gap-6">
-                            <img class="size-[5vw] md:size-[3vw] object-cover rounded-full" src="https://s3-alpha-sig.figma.com/img/4822/ab75/beaf98b5744a009f224fcd8cf3bbc9d9?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YMsglKObluClnf8hCylLqHEJnfBVEwyWYmm1TR0eT2PDfG4~ldzpAGK7Q94AVY7rXC2oqX3s2OWMK1Fxi1yEUF1FZx6CfqA7Xy8ZtlcTK1Zg5ODPYVGdWu15chXNki8y4EDxFytJXnGIvSC7NFUW~JD0jAKzrQncQeLDYoNMNvN~F8aDNpQiTwXt0F1ba8Pvgaw94acY2WhjMQBjdQcXHY2OcYzogyhWCUimdzlL6pIN1wxfZwdN4IGTLiX6fCKXWme-K8HvpYxrEqEUYBc0PRqVgaIxtPZ2G~Lh8PYqAiRfBYk7Jk4g0mUdlW7Q-Y5NdSaGojgonnjKIA0FkwXq~g__" alt="">
-                            <div class="testimonial-user-info">
-                                <h2 class="text-[2vw] md:text-[1vw] font-neue">Rocky Borman</h2>
-                                <small class="text-xs pt-[0.2vw]">Mumbai</small>
-
-                            </div>
-                        </div>
-
-                        <div class="testimonial-user-review text-justify theme-secondary mt-10">
-
-                            <p class=" text-[1.8vw]  md:text-[1vw] font-satoshi">“Infiny Solutions developed a custom CRM system for our retail business, and it has made managing customer relationships so much easier. The team was very knowledgeable, and they ensured the system was tailored to our needs. Excellent customer service throughout the project, and the post-launch support has been exceptional. Would definitely work with them again.”</p>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card mb-[1.2vw] card-theme p-[1.4vw] md:p-[1vw] rounded-lg">
-                        <div class="testimonial-user-profile leading-none items-center flex gap-6">
-                            <img class="size-[5vw] md:size-[3vw] object-cover rounded-full" src="https://s3-alpha-sig.figma.com/img/55f8/ee52/47fe4ab239599c53f69c5a78af11e5ed?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Z2Bx-g4-qxHiFZ2tBSyEbc40iXBT6rrgWQzJODnUJs4Ye8zMbR7Oaf2AxdLov3zj27yvADOMyb5VguXuSyVVmMJEjZJ0OtVGZiF5TCF5zTUdh5l11co7F7nd8yMH3YZR3k-LJzsz03F~X9PCbQv3h0a8EqUoWJ1c6C2B3Mh--5xIxbTGMpbqH1DW8ZnEMv8J-m7vvbRdsWnez4~Kzl0TduDlh8PKK43Txc8TqMR0gAUvk9fPjfFOGY3sw0QLhnJLoT1u-3-tnSMx7epXwTGmXUPf2BL~tDsIkEhCht9cgoDezPqSeVlRpdVd7r7auNU4l~-i~4hoL6DMySYwKMcHng__" alt="">
-                            <div class="testimonial-user-info">
-                                <h2 class="text-[2vw] md:text-[1vw] font-neue">Rimpi Gogoi</h2>
-                                <small class="text-xs pt-[0.2vw]">Guwahati</small>
-
-                            </div>
-                        </div>
-
-                        <div class="testimonial-user-review text-justify theme-secondary mt-10">
-
-                            <p class="text-[1.8vw] md:text-[1vw] font-satoshi">“We worked with Infiny Solutions on a mobile app development project. The app came out well, but the timeline wasn’t met as initially promised. The team was professional, but communication was a bit slow at times. I appreciated their attention to detail, but the delay affected our launch. Still, the final product met our needs.”</p>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card mb-[1.2vw] card-theme p-[1.4vw] md:p-[1vw] rounded-lg">
-                        <div class="testimonial-user-profile leading-none items-center flex gap-6">
-                            <img class="size-[5vw] md:size-[3vw] object-cover rounded-full" src="https://s3-alpha-sig.figma.com/img/f7c1/4add/f0b86353653d3d78c2e145fa3548f0ed?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=P05tSsMqesyv~uuRlSVxHEm6coUw5e7RrBmtWi8dYYu6uxQ2H5yO~jkPL9N3rBxWplrvXGsjDgST~Zea-kaCIZkZ9Kz-bYurkUiVBVnwoMNTEhmDWe1o23yQFsoOmM-dT0EYgVn72y4w~eDTCkOBfJjk812DHsfphNsvU-hiuV3knb-eRvcDPSQ0KYSX-7TljRVEhfjt39L3mJK~17DHzA3L8RCz7PmAA3zR9fg4-wdY1ploQX~ZCLxuWUUrwz6wRI0ZIeeWqM5BpC7oHlSWUPqOOYap0gomku4hcWBoEBhjFN0fjqROucOkLEF2CD1~8Z~6q96B7NEYwZR0MlPhRg__" alt="">
-                            <div class="testimonial-user-info">
-                                <h2 class="text-[2vw] md:text-[1vw] font-neue">Brishti Hendik</h2>
-                                <small class="text-xs pt-[0.2vw]">Dibrugarh</small>
-
-                            </div>
-                        </div>
-
-                        <div class="testimonial-user-review text-justify theme-secondary mt-10">
-
-                            <p class="text-[1.8vw] md:text-[1vw] font-satoshi">“We contracted Infiny Solutions for an enterprise-level ERP system integration. While they delivered the basic functionalities, the system often encounters bugs and slowdowns. Their support has been lacking, and we are struggling to get timely fixes. Not the level of quality we expected for a project of this scale.”</p>
-                        </div>
-                    </div>
-
-                    
-
-                    
-
-
-                    
-
-
-                </div>
-
-                <div class="testimonial-row row-bottom translate-y-[20%] w-[30%] md:w-[25%]">
-
-                    <div class="testimonial-card mb-[1.2vw] card-theme p-[1.4vw] md:p-[1vw] rounded-lg">
-                        <div class="testimonial-user-profile leading-none items-center flex gap-6">
-                            <img class="size-[5vw] md:size-[3vw] object-cover rounded-full" src="https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                            <div class="testimonial-user-info">
-                                <h2 class="text-[2vw] md:text-[1vw] font-neue">Rohit M.</h2>
-                                <small class="text-xs pt-[0.2vw]">Delhi</small>
-
-                            </div>
-                        </div>
-
-                        <div class="testimonial-user-review text-justify theme-secondary mt-10">
-
-                            <p class="text-[1.8vw] md:text-[1vw] font-satoshi">“We engaged Infiny Solutions for a logistics management software project. While the solution they delivered works, there were some delays, and a few features were missing during the initial launch. However, after some follow-ups, they did address our concerns. It's a decent product, but not without its challenges.”</p>
-                        </div>
-                    </div>
-
-                    
-
-                    <div class="testimonial-card mb-[1.2vw] card-theme p-[1.4vw] md:p-[1vw] rounded-lg">
-                        <div class="testimonial-user-profile leading-none items-center flex gap-6">
-                            <img class="size-[5vw] md:size-[3vw] object-cover rounded-full" src="https://plus.unsplash.com/premium_photo-1687186954188-76f7f4a3d829?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                            <div class="testimonial-user-info">
-                                <h2 class="text-[2vw] md:text-[1vw] font-neue">Sunita R.</h2>
-                                <small class="text-xs pt-[0.2vw]">Bangalore</small>
-
-                            </div>
-                        </div>
-
-                        <div class="testimonial-user-review text-justify theme-secondary mt-10">
-
-                            <p class="text-[1.8vw] md:text-[1vw] font-satoshi">“Infiny Solutions helped us with our event management software, and the experience was amazing. They were very attentive to our needs and delivered a platform that significantly improved our event planning and coordination. The interface is user-friendly, and the team continues to provide great support whenever we need it. Highly satisfied with their work.”</p>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card mb-[1.2vw] card-theme p-[1.4vw] md:p-[1vw] rounded-lg">
-                        <div class="testimonial-user-profile leading-none items-center flex gap-6">
-                            <img class="size-[5vw] md:size-[3vw] object-cover rounded-full" src="https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                            <div class="testimonial-user-info">
-                                <h2 class="text-[2vw] md:text-[1vw] font-neue">Deepak L</h2>
-                                <small class="text-xs pt-[0.2vw]">Mumbai</small>
-
-                            </div>
-                        </div>
-
-                        <div class="testimonial-user-review text-justify theme-secondary mt-10">
-
-                            <p class="text-[1.8vw] md:text-[1vw] font-satoshi">“We contracted Infiny Solutions for a custom financial software solution. Unfortunately, the project faced several delays, and when delivered, it was riddled with bugs. Despite multiple follow-ups, their team failed to resolve key issues in a timely manner. Not happy with the outcome, and we're now seeking a new vendor.”</p>
-                        </div>
-                    </div>
-
-                    
-
-
-                    
-
-
-                </div>
-
-                <div class="testimonial-row hidden md:visible row-top w-[25%]">
-
-                    <div class="testimonial-card mb-[1.2vw] card-theme p-[1vw] rounded-lg">
-                        <div class="testimonial-user-profile leading-none items-center flex gap-6">
-                            <img class="size-[3vw] object-cover rounded-full" src="https://images.unsplash.com/photo-1512663150964-d8f43c899f76?q=80&w=1892&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                            <div class="testimonial-user-info">
-                                <h2 class="text-[1vw] font-neue">Anupam J.</h2>
-                                <small class="text-xs pt-[0.2vw]">Kolkata</small>
-
-                            </div>
-                        </div>
-
-                        <div class="testimonial-user-review text-justify theme-secondary mt-10">
-
-                            <p class="text-[1vw] font-satoshi">“We contracted Infiny Solutions to develop a custom event management app for our business. While the app functions, it’s not as smooth or feature-rich as we expected. There were frequent crashes during testing, and their team took weeks to address the issues. Support was also quite slow. Not a great experience overall.”</p>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card mb-[1.2vw] card-theme p-[1vw] rounded-lg">
-                        <div class="testimonial-user-profile leading-none items-center flex gap-6">
-                            <img class="size-[3vw] object-cover rounded-full" src="https://plus.unsplash.com/premium_photo-1687485794131-779edaea6a64?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                            <div class="testimonial-user-info">
-                                <h2 class="text-[1vw] font-neue">Seema P.</h2>
-                                <small class="text-xs pt-[0.2vw]">Gurgaon</small>
-
-                            </div>
-                        </div>
-
-                        <div class="testimonial-user-review text-justify theme-secondary mt-10">
-
-                            <p class="text-[1vw] font-satoshi">“Infiny Solutions developed a fantastic analytics dashboard for our digital marketing campaigns. The dashboard is intuitive and offers real-time insights that help us make better decisions for our clients. They were attentive to our needs and delivered the product quickly. Great team to work with!”</p>
-                        </div>
-                    </div>
-
-                    
-
-                    <div class="testimonial-card mb-[1.2vw] card-theme p-[1vw] rounded-lg">
-                        <div class="testimonial-user-profile leading-none items-center flex gap-6">
-                            <img class="size-[3vw] object-cover rounded-full" src="https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                            <div class="testimonial-user-info">
-                                <h2 class="text-[1vw] font-neue">Pradeep S.</h2>
-                                <small class="text-xs pt-[0.2vw]">Hyderabad</small>
-
-                            </div>
-                        </div>
-
-                        <div class="testimonial-user-review text-justify theme-secondary mt-10">
-
-                            <p class="text-[1vw] font-satoshi">“Unfortunately, our experience with Infiny Solutions was not as positive as we'd hoped. We hired them to revamp our website, but after launch, we faced multiple issues with site speed and performance. Despite promises of continuous support, their team was slow to respond, and it took too long to fix the issues. We're considering other vendors now.”</p>
-                        </div>
-                    </div>
-
-                    
-
-
-                    
-
-
-                </div>
-
 
             </div>
 
 
 
 
-        </div>
-
-
-
-
-
-
-
-
-
-        <div class="w-full px-[2vw] py-[2vw]">
-
-            <div class=" w-full section overflow-hidden  text-white">
-                <div class="footer-top  flex items-center justify-between  items-center">
-                  <p class="font-satoshi text-[2.4vw] lg:text-[1.6vw] leading-none  w-1/2 lg:w-[34%]">
-                    It’s not client and supplier. It’s equals; partners. Teamwork –
-                    smooth, enjoyable and incredibly productive. And from experience, the
-                    results are so much better for it.
-                  </p>
-          
-                  <div class="fixed-con  relative size-[12vw] lg:size-[7.3vw] bg-[#404cd6] p-[0.6vw]  flex justify-center items-center  rounded-full">
-                    <small class=" text-[2vw] lg:text-[1.3vw]  font-neue leading-none text-white text-center uppercase">
-                      Let's work
-                    </small>
             
-                    <img
-                      class="absolute scale-0 top-0 left-0"
-                      src="https://cdn.prod.website-files.com/66e91bdd12136933608fa38c/66f3c1bdbe9e9e81ec4eb2e5_Group%2016034.svg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-          
-                <div class="h-[6vw] w-full"></div>
-                <div class="footer-mid flex   justify-between">
-                  <div class="first-links">
-                    <h3 class="uppercase font-neue opacity-75 text-[2.4vw] lg:text-[1.4vw]">
-                      studio
-                    </h3>
-                    <ul class="font-satoshi text-[2vw] lg:text-[1.2vw] mt-6">
-                      <li>About</li>
-                      <li>Work</li>
-                      <li>Journal</li>
-                      <li>Contact</li>
-                    </ul>
-                  </div>
-                  <div class="second-links">
-                    <h3 class="uppercase font-neue opacity-75 text-[2.4vw] lg:text-[1.4vw]">
-                     SOCIALS
-                    </h3>
-                    <ul class="font-satoshi text-[2vw] lg:text-[1.2vw] mt-6">
-                      <li>LinkedIn</li>
-                      <li>Dribbble</li>
-                      <li>Behance</li>
-                      <li>Instagram</li>
-                    </ul>
-                  </div>
-                  <div class="second-links w-1/3 lg:w-[18%]">
-                    <h3 class="uppercase font-neue opacity-75 text-[2.4vw] lg:text-[1.4vw]">
-                    STUDIO
-                    </h3>
-                    <div class="font-satoshi text-[2vw] lg:text-[1.2vw] mt-6">
-                      <p class="pb-4" >Airborne Studio
-          Department Leeds Dock
-          4 The Boulevard
-          Leeds LS10 1PZ</p>
-                      <p>infinyweb.com</p>
-                    </div>
-                  </div>
-                </div>
-          
-                
-          
-                <div class=" flex justify-between items-center">
-                  <p class="text-[1.8vw] md:text-[1vw] opacity-75 font-sharp uppercase">© 2024 infiny pvt ltd</p>
-                  <div class="flex justify-between">
-                      <p class="text-[1.8vw] md:text-[1vw] flex gap-2 opacity-75 uppercase  font-sharp">
-                          <a href="">Privacy</a>
-                          *
-                          <a href="">Terms</a>
-          
-                      </p>
-                      
-          
-                  </div>
-          
-                </div>
-              </div>
-
 
 
 
         </div>
+
+
+
+        
+
+
+        <div data-color="white" class="w-full section px-[2vw] py-[2vw]">
+
+            <h2 class="py-[4vw] text-center font-neue text-[4.4vw] md:text-[3vw]">Our Team</h2>
+
+            <div class="w-full relative team-list font-neue-light font-light">
+
+                <div class="team-card relative    py-[1.6vw] px-[1.4vw] border-black border-b-[1px] ">
+                    <div class="flex justify-between relative z-[3] items-center">
+
+                        <div class="text-[3vw] flex gap-[2vw]">
+                            <h2 class="font-light opacity-75">01</h2>
+                            <h2>Akshita Verma</h2>
+                        </div>
+    
+                        <p class="font-satoshi font-medium text-[1.4vw]">Team Leader</p>
+                    </div>
+
+                    <div class="overlay-blue w-full   z-[2] absolute top-0 left-0 bg-[--dblue]"></div>
+
+                    <div class="overlay-photo-showecase opacity-0 absolute z-[4] size-[12vw] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover rounded-full overflow-hidden ">
+
+                        <img class="w-full h-full object-cover" src="https://plus.unsplash.com/premium_photo-1688350808212-4e6908a03925?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                </div>
+
+                <div class="team-card relative    py-[1.6vw] px-[1.4vw] border-black border-b-[1px] ">
+                    <div class="flex justify-between relative z-[3] items-center">
+
+                        <div class="text-[3vw] flex gap-[2vw]">
+                            <h2 class="font-light opacity-75">02</h2>
+                            <h2>Abinash Xonowal</h2>
+                        </div>
+    
+                        <p class="font-satoshi font-medium text-[1.4vw]">designers</p>
+                    </div>
+
+                    <div class="overlay-blue w-full   z-[2] absolute top-0 left-0 bg-[--dblue]"></div>
+
+                    <div class="overlay-photo-showecase opacity-0 absolute z-[4] size-[12vw] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover overflow-hidden rounded-full bg-yellow-600">
+
+                        <img class="w-full h-full object-cover" src="https://plus.unsplash.com/premium_photo-1689539137236-b68e436248de?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                </div>
+
+                <div class="team-card relative    py-[1.6vw] px-[1.4vw] border-black border-b-[1px] ">
+                    <div class="flex justify-between relative z-[3] items-center">
+
+                        <div class="text-[3vw] flex gap-[2vw]">
+                            <h2 class="font-light opacity-75">03</h2>
+                            <h2>Abhilash Mahanta</h2>
+                        </div>
+    
+                        <p class="font-satoshi font-medium text-[1.4vw]">Designer</p>
+                    </div>
+
+                    <div class="overlay-blue w-full  z-[2] absolute top-0 left-0 bg-[--dblue]"></div>
+
+                    <div class="overlay-photo-showecase opacity-0 absolute z-[4] size-[12vw] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover rounded-full ">
+
+
+                        <img class="w-full h-full object-cover rounded-full" src="https://plus.unsplash.com/premium_photo-1689977927774-401b12d137d6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                </div>
+
+                <div class="team-card relative    py-[1.6vw] px-[1.4vw] border-black border-b-[1px] ">
+                    <div class="flex justify-between relative z-[3] items-center">
+
+                        <div class="text-[3vw] flex gap-[2vw]">
+                            <h2 class="font-light opacity-75">04</h2>
+                            <h2>Abhishek Sharma</h2>
+                        </div>
+    
+                        <p class="font-satoshi font-medium text-[1.4vw]">Full Stack Developer</p>
+                    </div>
+
+                    <div class="overlay-blue w-full   z-[2] absolute top-0 left-0 bg-[--dblue]"></div>
+
+                    <div class="overlay-photo-showecase opacity-0 absolute z-[4] size-[12vw] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover rounded-full bg-yellow-600">
+
+                        <img class="w-full h-full object-cover rounded-full" src="https://imgs.search.brave.com/93yp3ScNo0IsegobcX4bb_pK5h59JNiYMml3B_Eaygk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTMz/NzQ5NDY5Ni9waG90/by9pbmRpYW4tbWFu/LXN0dWRpby1wb3J0/cmFpdC5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9NTFWdDda/UTd0NG5iQUR0d1Z6/UmRGZnAzRDB3clFt/d2RnZEt6aU1HMXQw/ND0" alt="">
+
+
+                    </div>
+                </div>
+
+                
+
+                
+
+                
+
+                
+
+
+            </div>
+
+
+        </div>
+
+        
+
+
+
+        <div class="cta w-full  py-[2vw] px-[2vw] flex justify-between bg-[#F5F19C]">
+
+
+            <div class="cta-left w-1/2 ">
+                <h2 class="text-[3vw] font-neue-light">Let's build a better future.</h2>
+            </div>
+
+            <div class="cta-right w-1/2 flex justify-end items-center">
+
+                <p class="w-1/2 font-satoshi text-[1.2vw] font-semibold leading-none">Find out how Significo’s healthcare
+                    technology expertise can take your digital
+                    experience to the next level.</p>
+
+            </div>
+        </div>
+
+
+
+        
 
 
 
@@ -1189,6 +918,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
         integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
 
     <script src="./index.js"></script>
 </body>
