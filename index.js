@@ -85,7 +85,7 @@ function heroSectionAnimation() {
   t1.to(
     ".row.left",
     {
-      transform: "translateX(-20%)",
+      transform: "translateX(-15%)",
       duration: 4,
       ease: "linear",
     },
@@ -95,7 +95,7 @@ function heroSectionAnimation() {
   t1.to(
     ".row.right",
     {
-      transform: "translateX(-20%)",
+      transform: "translateX(-12%)",
       duration: 4,
       ease: "linear",
     },
@@ -119,7 +119,6 @@ function ourTeamSectionAnimation() {
   const teamCards = document.querySelectorAll(".team-card");
 
   teamCards.forEach((card) => {
-    console.log(card)
     card.addEventListener("mousemove", function (event) {
       gsap.to(this.querySelector(".overlay-blue"), {
         height: "100%",
@@ -141,7 +140,7 @@ function ourTeamSectionAnimation() {
         ease: "power2.inOut",
       });
 
-      gsap.to(this.querySelector(".overlay-photo-showcase"), {
+      gsap.to(this.querySelector(".overlay-photo-showecase"), {
         opacity: 0,
         duration: 1,
         ease: "power2.inOut",
@@ -178,3 +177,64 @@ ourTeamSectionAnimation();
 (function () {
   const locomotiveScroll = new LocomotiveScroll();
 })();
+
+
+
+document.querySelector(".button-effect").addEventListener("mouseenter", function (e) {
+  console.log("hover")
+  gsap.to(this.querySelector(".row-grow"), {
+    width:"100%",
+    backgroundColor:"#000",
+    duration: 1,
+    ease: "power2.out", 
+  });
+  
+});
+
+
+document.querySelector(".button-effect").addEventListener("mouseleave", function (e) {
+  console.log("hover")
+  gsap.to(this.querySelector(".row-grow"), {
+    width:"0%",
+    duration: 1,
+    ease: "power2.out", 
+  });
+});
+
+
+
+const t3 = gsap.timeline({paused:true});
+t3.to("#open-nav",{
+  duration:1,
+  top:0
+}).to('.nav-video',{
+  scale:1,
+  ease:Power2
+}).from('.text-effect.flag',{
+  y:30,
+  duration:1,
+  stagger:0.1,
+  opacity:0
+}).from('.navbar-tagline > span',{
+  x:20,
+  duration:1,
+  opacity:0,
+  stagger:0.1
+},"b").from('.social-link > div',{
+  x:20,
+  duration:1,
+  opacity:0,
+  stagger:0.1
+},"b")
+
+
+
+document.getElementById("open-navbar").addEventListener("click",function(){
+  t3.play();
+  console.log("clicked")
+});
+
+document.getElementById("close-nav").addEventListener("click",function(){
+  t3.reverse()
+});
+

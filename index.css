@@ -9,7 +9,17 @@
     --dblue:#2544EE
 }
 
+.text-effect > h2 {
+    transition: transform 0.3s ease-in-out; 
+}
 
+.text-effect:hover > h2{
+    transform: translateY(-100%);
+}
+
+.rotate-svg:hover{
+    transform: rotate(45deg);
+}
 
 
 *::selection{
