@@ -13,18 +13,20 @@
       <!-- navbar section -->
 
       <div id="open-nav"
-        class="absolute    top-[-100%] pt-[2vw] px-[2vw] left-0 w-full z-[12] bg-[#EDECE7]"
+        class="absolute flex flex-col justify-between md:block h-screen md:h-fit overflow-hidden  -top-[100%]  pt-[2vw] px-[2vw] left-0 w-full z-[12] bg-[#EDECE7]"
       >
         <div class="top-nav flex justify-between items-center">
           <h2 class="font-satoshi text-[#0e0e0e] font-semibold text-[3.4vw] md:text-[1.6vw]">
             InfinyWeb
           </h2>
 
-          <small id="close-nav" class="font-neue text-[2vw] md:text-[1.2vw]">CLOSE</small>
+          
+
+          <small id="close-nav" class="font-neue text-[3vw]  md:text-[1.2vw]">CLOSE</small>
         </div>
 
-        <div class="top-middle flex justify-between items-start">
-          <div class="w-[24%]  overflow-hidden">
+        <div class="top-middle flex justify-between items-center md:items-start">
+          <div class="w-[24%] hidden md:block overflow-hidden">
             <video  autoplay muted loop
               class="w-full nav-video scale-[0] h-full rounded-md object-cover"
               src="https://prismic-io.s3.amazonaws.com/rejouice/3c8eec5e-c857-4fd3-9add-a9e6035a160c_RJ-2.0-Video+background+5_1+%281%29.mp4"
@@ -39,11 +41,11 @@
                   <span class="text-[1.2vw] ">Play reel</span>
             </div>
           </div>
-          <div class="w-[45%] font-satoshi leading-none">
+          <div class="md:w-[45%] w-full font-satoshi leading-none">
 
            
 
-                <div class="text-[3.6vw] text-effect flag  overflow-hidden h-[3.6vw]   ">
+                <div class="text-[8vh] md:text-[3.6vw] text-effect flag  overflow-hidden md:h-[3.6vw] h-[8vh]   ">
 
                     <h2 class="  ">Home</h2>
                     <h2 class="">Home</h2>
@@ -51,37 +53,37 @@
 
                 
 
-            <div class="text-[3.6vw] text-effect flag overflow-hidden h-[3.6vw]   ">
+            <div class="md:text-[3.6vw] text-[8vh] h-[8vh] text-effect flag overflow-hidden md:h-[3.6vw]   ">
 
                 <h2 class="  ">Work</h2>
                 <h2 class="">Work</h2>
             </div>
-            <div class="text-[3.6vw] text-effect flag  overflow-hidden h-[3.6vw]   ">
+            <div class="md:text-[3.6vw] text-[8vh] h-[8vh] text-effect flag  overflow-hidden md:h-[3.6vw] w-full  ">
 
-                <h2 class="  ">Services & Models</h2>
-                <h2 class="">Services & Models</h2>
+                <h2 class="white-space-nowrap">Services </h2>
+                <h2 class="">Services </h2>
             </div>
 
-            <div class="text-[3.6vw] text-effect flag overflow-hidden h-[3.6vw]   ">
+            <div class="md:text-[3.6vw]  text-[8vh] h-[8vh] text-effect flag overflow-hidden md:h-[3.6vw]   ">
 
                 <h2 class="  ">About</h2>
                 <h2 class="">About</h2>
             </div>
 
-            <div class="text-[3.6vw] text-effect flag overflow-hidden h-[3.6vw]   ">
+            <div class="md:text-[3.6vw] text-[8vh] h-[8vh] text-effect flag overflow-hidden md:h-[3.6vw]   ">
 
                 <h2 class="  ">Contact</h2>
                 <h2 class="">Contact</h2>
             </div>
 
             
-            <div class="button-effect my-[2vw] border-[1px] overflow-hidden relative border-[#0e0e0e] rounded-full w-fit ">
+            <div class="button-effect md:block my-[2vw] border-[1px] overflow-hidden relative border-[#0e0e0e] rounded-full w-[50%] md:w-fit ">
 
 
-                <div class="text-[1vw] text-effect relative z-[2]  overflow-hidden  h-[7vh] w-[9vw]  ">
+                <div class="text-[1vw] text-effect relative z-[2] w-full md:w-[10vw]   overflow-hidden  h-[6vh]   ">
                 
-                    <h2 class=" text-[#0e0e0e] flex justify-center items-center w-full h-full font-semibold ">Take a seat</h2>
-                    <h2 class="text-[#EDECE7] flex justify-center items-center w-full h-full font-semibold">Take a seat</h2>
+                    <h2 class=" text-[#0e0e0e] flex justify-center items-center w-full h-full font-semibold text-[3.2vw]">Take a seat</h2>
+                    <h2 class="text-[#EDECE7] flex justify-center items-center w-full h-full font-semibold text-[3.2vw]">Take a seat</h2>
                 </div>
 
                 <div class="row-grow  absolute z-[1] top-0 left-0 h-full bg-red-900"></div>
@@ -97,24 +99,24 @@
 
         <div class="top-bottom py-[1.2vw] border-t-[1px] border-[#0e0e0e] flex justify-between">
 
-            <h1 class="font-satoshi  navbar-tagline">
+            <h1 class="font-satoshi hidden md:block  navbar-tagline">
 
                 <span class="inline-block">Tomorrow's</span>
                 <span class="inline-block">Brands,</span>
                 <span class="inline-block">Today.™</span>
             </h1>
 
-            <div class="social-link flex gap-[0.6vh]">
+            <div class="social-link flex flex-col md:flex-row gap-[0.6vh]">
                 <div class="flex gap-[0.4vw] items-center">
                     <small class="text-[1.8vh] font-neue-light">X</small>
-                    <svg  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="rotate-svg"  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6.82813 13.1411L13.1413 6.82841M13.1413 6.82841L7.48446 6.82841M13.1413 6.82841L13.1413 12.4853" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
                       </svg>
                 </div>
 
                 <div class="flex gap-[0.4vw] items-center">
                     <small class="text-[1.8vh] font-neue-light">Instagram</small>
-                    <svg  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="rotate-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6.82813 13.1411L13.1413 6.82841M13.1413 6.82841L7.48446 6.82841M13.1413 6.82841L13.1413 12.4853" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
                       </svg>
                 </div>
@@ -131,13 +133,13 @@
         </div>
       </div>
       <div
-        class="p-[3vw] navbar absolute text-white top-0 flex justify-between items-center left-0 w-full z-[6]"
+        class=" p-[4vw]  md:p-[3vw] navbar absolute text-white top-0 flex justify-between items-center left-0 w-full z-[6]"
       >
         <h2 class="font-satoshi font-semibold text-[4vw] md:text-[1.6vw]">
           InfinyWeb
         </h2>
 
-        <small id="open-navbar" class="font-neue text-[2vw] md:text-[1.2vw]">MENU</small>
+        <small id="open-navbar" class="font-neue cursor-pointer text-[3vw] md:text-[1.2vw]">MENU</small>
       </div>
 
       <!-- hero section -->
@@ -159,7 +161,7 @@
               src="https://infinyweb.com/wp-content/uploads/2023/02/mixkit-man-moves-with-virtual-reality-glasses-267.mp4"
             ></video>
 
-            <div class="w-full h-screen z-[5] bg-gradient-to-r from-black via-transparent to-black absolute top-0 left-0  ">
+            <div class="w-full  h-screen z-[5] bg-gradient-to-r from-black via-transparent to-black absolute top-0 left-0  ">
 
 
             </div>
@@ -180,8 +182,8 @@
             <div
               class="row-marquee absolute leading-none top-1/2 w-screen overflow-hidden -translate-y-1/2 font-neue"
             >
-              <div class="row left flex gap-[3vw] -translate-x-1/2 w-full">
-                <div class="row-card flex items-center gap-[6vw]">
+              <div class="row left flex gap-[2vw] -translate-x-1/2 w-full">
+                <div class="row-card flex items-center gap-[2vw]">
                   <h2 class="md:text-[5vw] text-[8vw]">empathetic</h2>
 
                   <div class="size-[5vw] overflow-hidden md:size-[3vw]">
@@ -254,7 +256,7 @@
                 </div>
               </div>
 
-              <div class="row right flex gap-[3vw] -translate-x-2/3 w-full">
+              <div class="row right flex gap-[2vw] -translate-x-2/3 w-full">
                 <div class="row-card flex items-center gap-[2vw]">
                   <h2 class="md:text-[5vw] text-[8vw]">intuitive</h2>
 
@@ -340,7 +342,7 @@
                 </div>
               </div>
 
-              <div class="row left flex gap-[3vw] -translate-x-1/2 w-full">
+              <div class="row left flex gap-[2vw] -translate-x-1/2 w-full">
                 <div class="row-card flex items-center gap-[2vw]">
                   <h2 class="md:text-[5vw] text-[8vw]">empathetic</h2>
 
@@ -414,7 +416,7 @@
                 </div>
               </div>
 
-              <div class="row right flex gap-[3vw] -translate-x-2/3 w-full">
+              <div class="row right flex gap-[2vw] -translate-x-2/3 w-full">
                 <div class="row-card flex items-center gap-[2vw]">
                   <h2 class="md:text-[5vw] text-[8vw]">empathetic</h2>
 
@@ -491,7 +493,7 @@
           </div>
 
           <div
-            class="absolute bottom-[4%] left-[2vw] z-[5] font-satoshi text-[2.8vw] md:text-[1.2vw] font-semibold leading-none"
+            class="absolute bottom-[4%] left-[2vw] z-[5] font-satoshi text-[3.6vw] md:text-[1.2vw] font-semibold leading-none"
           >
             <small
               >Futuristic, cutting-edge technology. <br />
@@ -526,22 +528,20 @@
               From ideas to products, at scale.
             </h2>
 
-            <div class="masker w-fit px-[2vw] border-[1px] py-[1vw]">
-              <small class=" ">Our Solution</small>
-            </div>
+            
           </div>
 
           <div
             class="craft-right w-full md:w-1/2 md:gap-[4vw] flex flex-col gap-[4vw] items-center"
           >
             <div
-              class="purpose-card p-[1.6vw] flex justify-between border-[1px] w-[100%] md:w-[60%]"
+              class="purpose-card rounded-lg p-[2vw] md:p-[1.6vw] flex justify-between border-[1px] w-[100%] md:w-[60%]"
             >
               <div class="purpose-card-left font-satoshi w-[70%]">
                 <h3 class="text-[4vw] md:text-[1.6vw] font-bold">
                   Driven by Purpose
                 </h3>
-                <p class="text-[2vw] md:text-[0.9vw] font-semibold pt-[1.4vw]">
+                <p class="text-[3vw] text-justify md:text-[0.9vw] font-semibold pt-[1.4vw]">
                   We believe technology can dramatically improve the experience
                   of managing health, and — when crafted with empathy,
                   intention, and expertise — impact lives at scale.
@@ -587,13 +587,13 @@
             </div>
 
             <div
-              class="purpose-card p-[1.6vw] flex justify-between border-[1px] w-[100%] md:w-[60%]"
+              class="purpose-card rounded-md p-[2vw] md:p-[1.6vw] flex justify-between border-[1px] w-[100%] md:w-[60%]"
             >
               <div class="purpose-card-left font-satoshi w-[70%]">
                 <h3 class="text-[4vw] md:text-[1.6vw] font-bold">
                   Custom Products
                 </h3>
-                <p class="text-[2vw] md:text-[0.9vw] font-semibold pt-[1.4vw]">
+                <p class="text-[3vw]  text-justify md:text-[0.9vw] font-semibold pt-[1.4vw]">
                   We build mobile and web-based apps, platforms, and
                   infrastructure fitted to your needs. We have an open solutions
                   framework, so we work to fit your business, not the other way
@@ -666,13 +666,13 @@
             </div>
 
             <div
-              class="purpose-card p-[1.6vw] flex justify-between border-[1px] w-[100%] md:w-[60%]"
+              class="purpose-card rounded-md p-[1.6vw] flex justify-between border-[1px] w-[100%] md:w-[60%]"
             >
               <div class="purpose-card-left font-satoshi w-[70%]">
                 <h3 class="text-[4vw] md:text-[1.6vw] font-bold">
                   Partnerships
                 </h3>
-                <p class="text-[2vw] font-semibold md:text-[0.9vw] pt-[1.4vw]">
+                <p class="text-[3vw] font-semibold md:text-[0.9vw] pt-[1.4vw]">
                   We work with payers, providers, and pharma to help internal
                   teams through ground-up builds, product optimizations, and
                   streamlining data/analytics.
@@ -739,13 +739,13 @@
             </div>
 
             <div
-              class="purpose-card p-[1.6vw] flex justify-between border-[1px] w-[100%] md:w-[60%]"
+              class="purpose-card rounded-md p-[2vw] md:p-[1.6vw] flex justify-between border-[1px] w-[100%] md:w-[60%]"
             >
               <div class="purpose-card-left font-satoshi w-[70%]">
                 <h3 class="text-[4vw] md:text-[1.6vw] font-bold">
                   Security & Compliance
                 </h3>
-                <p class="text-[2vw] md:text-[0.9vw] pt-[1.4vw]">
+                <p class="text-[3vw] md:text-[0.9vw] pt-[1.4vw]">
                   Not just technology experts. Health experts. We are able to
                   navigate both stringent regulatory environments and the
                   complexities of technology and data.
@@ -794,7 +794,7 @@
         </h2>
         <div class="flex justify-between flex-wrap md:flex-nowrap gap-6 w-full">
           <div
-            class="service-card w-[100%] relative md:w-1/4 overflow-hidden rounded-lg h-[45vw] md:h-[32vw]"
+            class="service-card w-[100%] h-[70vw]  relative md:w-1/4 overflow-hidden rounded-lg  md:h-[25vw] "
           >
             <img
               class="w-full h-full object-cover"
@@ -803,25 +803,23 @@
             />
 
             <div
-              class="service-card-overlap p-[2vw] md:p-[0.8vw] absolute w-full left-0 bottom-0 bg-[rgba(0,0,0,0.4)]"
+              class="service-card-overlap left-1/2 -translate-x-1/2 p-[2vw] w-[96%] md:w-[90%] rounded-md md:p-[0.8vw] absolute  left-0 bottom-[4%] bg-[rgba(0,0,0,0.4)]"
             >
               <h3 class="font-neue text-white text-[4vw] md:text-[1.4vw]">
                 Product strategy & design
               </h3>
               <p
-                class="text-[2.2vw] md:text-[1vw] font-semibold text-[#d4d4d4]"
+                class="text-[3vw] md:text-[1vw] font-semibold text-[#d4d4d4]"
               >
                 A huge portion of business success comes from striking the right
                 balance between the products’ offerings and consumer behavior.
-                Our team of product strategists, project managers and UX
-                designers work together to build the roadmap that leads you to
-                glory.
+                Our team of product strategists
               </p>
             </div>
           </div>
 
           <div
-            class="service-card w-[100%] relative md:w-1/4 overflow-hidden rounded-lg h-[45vw] md:h-[32vw]"
+            class="service-card w-[100%] h-[70vw] relative md:w-1/4 overflow-hidden rounded-lg  md:h-[25vw]"
           >
             <img
               class="w-full h-full object-cover"
@@ -830,25 +828,23 @@
             />
 
             <div
-              class="service-card-overlap p-[2vw] md:p-[0.8vw] absolute w-full left-0 bottom-0 bg-[rgba(0,0,0,0.4)]"
+              class="service-card-overlap p-[2vw] left-1/2 rounded-md -translate-x-1/2 md:p-[0.8vw] absolute w-[96%] md:w-[90%] left-0 bottom-[4%] bg-[rgba(0,0,0,0.4)]"
             >
               <h3 class="font-neue text-white text-[4vw] md:text-[1.4vw]">
                 Web & mobile app development
               </h3>
               <p
-                class="md:text-[1vw] text-[2.2vw] font-semibold text-[#d4d4d4]"
+                class="md:text-[1vw] text-[3vw] font-semibold text-[#d4d4d4]"
               >
                 Not every problem in the world is solved by off-the-shelf
                 solutions like Shopify or WordPress. We follow a proven
-                methodology to build smart and custom solutions on iOS, Android
-                and web. Our backend engineers and app developers are at the
-                heart of it.
+                methodology to build smart. Lorem, ipsum dolor.
               </p>
             </div>
           </div>
 
           <div
-            class="service-card w-[100%] relative md:w-1/4 overflow-hidden rounded-lg h-[45vw] md:h-[32vw]"
+            class="service-card w-[100%] h-[70vw] relative md:w-1/4 overflow-hidden rounded-lg h-[45vw] md:h-[25vw]"
           >
             <img
               class="w-full h-full object-cover"
@@ -857,25 +853,23 @@
             />
 
             <div
-              class="service-card-overlap p-[2vw] md:p-[0.8vw] absolute w-full left-0 -bottom-0 bg-[rgba(0,0,0,0.4)]"
+              class="service-card-overlap left-1/2 rounded-md -translate-x-1/2  p-[2vw] md:p-[0.8vw] absolute w-[96%] md:w-[90%] left-0 bottom-[4%] bg-[rgba(0,0,0,0.4)]"
             >
               <h3 class="font-neue text-white text-[4vw] md:text-[1.4vw]">
                 Data science & cloud engineering
               </h3>
               <p
-                class="md:text-[1vw] text-[2.2vw] font-semibold text-[#d4d4d4]"
+                class="md:text-[1vw] text-[3vw] font-semibold text-[#d4d4d4]"
               >
                 Launching a web or a mobile app is not the final destination; it
                 is sustaining the workload and fulfilling the demands imposed by
-                the user base. Post deployment – sustainability, security and
-                scalability are the three pillars of a successful product. We’ve
-                got your back with our ever-so-reliable experts!
+                the user base. 
               </p>
             </div>
           </div>
 
           <div
-            class="service-card w-[100%] relative md:w-1/4 overflow-hidden rounded-lg h-[45vw] md:h-[32vw]"
+            class="service-card w-[100%] h-[70vw] relative md:w-1/4 overflow-hidden rounded-lg h-[30vw] md:h-[25vw]"
           >
             <img
               class="w-full h-full object-cover"
@@ -884,16 +878,16 @@
             />
 
             <div
-              class="service-card-overlap p-[2vw] md:p-[0.8vw] absolute w-full left-0 bottom-0 bg-[rgba(0,0,0,0.4)]"
+              class="service-card-overlap p-[2vw] left-1/2 rounded-md -translate-x-1/2  md:p-[0.8vw] absolute w-[96%] md:w-[90%] left-0 bottom-[4%] bg-[rgba(0,0,0,0.4)]"
             >
               <h3 class="font-neue text-[4vw] text-white md:text-[1.4vw]">
                 User Interface Design
               </h3>
               <p
-                class="text-[2.2vw] md:text-[1vw] font-semibold text-[#d4d4d4]"
+                class="text-[3vw] md:text-[1vw] font-semibold text-[#d4d4d4]"
               >
                 Learn the principles of UI design, including color theory,
-                typography, and layout. Gain hands-on experience with Figma.
+                typography, and layout. Gain hands-on experience with Figma. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </p>
             </div>
           </div>
@@ -902,11 +896,11 @@
 
       <div
         data-color="dark"
-        class="w-full tagline h-screen flex justify-center items-center section px-[2vw] py-[2vw]"
+        class="w-full tagline  flex justify-center items-center section px-[2vw] py-[20vw]"
       >
         <div class="tagline-wrapper w-full break-normal">
           <p class="border-b-[1px] pb-[1.2vw] border-zinc-200">
-            <span class="text-[1.8vw] font-neue-light"
+            <span class="text-[4vw] leading-none md:text-[1.8vw] font-neue-light"
               >We operate on a simple philosophy: <br />
               Quality over quantity.</span
             >
@@ -1020,7 +1014,7 @@
         </div>
       </div>
 
-      <div data-color="white" class="w-full section px-[2vw] py-[2vw]">
+      <div data-color="white" class="w-full section px-[2vw] py-[12vw]">
         <h2 class="py-[4vw] text-center font-neue text-[4.4vw] md:text-[3vw]">
           Our Team
         </h2>
@@ -1035,7 +1029,7 @@
                 <h2>Akshita Verma</h2>
               </div>
 
-              <p class="font-satoshi font-medium text-[1.4vw]">Team Leader</p>
+              <p class="font-satoshi font-medium text-[2.4vw] md:text-[1.4vw]">Team Leader</p>
             </div>
 
             <div
@@ -1062,7 +1056,7 @@
                 <h2>Abinash Xonowal</h2>
               </div>
 
-              <p class="font-satoshi font-medium text-[1.4vw]">designers</p>
+              <p class="font-satoshi font-medium text-[2.4vw] md:text-[1.4vw]">designers</p>
             </div>
 
             <div
@@ -1089,7 +1083,7 @@
                 <h2>Abhilash Mahanta</h2>
               </div>
 
-              <p class="font-satoshi font-medium text-[1.4vw]">Designer</p>
+              <p class="font-satoshi font-medium text-[2.4vw] md:text-[1.4vw]">Designer</p>
             </div>
 
             <div
@@ -1116,7 +1110,7 @@
                 <h2>Abhishek Sharma</h2>
               </div>
 
-              <p class="font-satoshi font-medium text-[1.4vw]">
+              <p class="font-satoshi font-medium text-[2.4vw] md:text-[1.4vw]">
                 Full Stack Developer
               </p>
             </div>
@@ -1138,22 +1132,7 @@
         </div>
       </div>
 
-      <div
-        class="cta w-full py-[2vw] px-[2vw] flex justify-between bg-[#F5F19C]"
-      >
-        <div class="cta-left w-1/2">
-          <h2 class="text-[3vw] font-neue-light">
-            Let's build a better future.
-          </h2>
-        </div>
-
-        <div class="cta-right w-1/2 flex justify-end items-center">
-          <p class="w-1/2 font-satoshi text-[1.2vw] font-semibold leading-none">
-            Find out how Significo’s healthcare technology expertise can take
-            your digital experience to the next level.
-          </p>
-        </div>
-      </div>
+      
     </div>
 
     <script

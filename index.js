@@ -44,8 +44,8 @@ function tagLineSectionAnimation() {
     ease: "elastic",
     scrollTrigger: {
       trigger: ".tagline",
-      start: "top 60%",
-      end: "bottom top",
+      start: "top 80%",
+      end: "bottom 50%",
       scrub: 2,
     },
   });
@@ -85,7 +85,7 @@ function heroSectionAnimation() {
   t1.to(
     ".row.left",
     {
-      transform: "translateX(-15%)",
+      transform: "translateX(-10%)",
       duration: 4,
       ease: "linear",
     },
@@ -95,7 +95,7 @@ function heroSectionAnimation() {
   t1.to(
     ".row.right",
     {
-      transform: "translateX(-12%)",
+      transform: "translateX(-4%)",
       duration: 4,
       ease: "linear",
     },
@@ -207,22 +207,24 @@ const t3 = gsap.timeline({paused:true});
 t3.to("#open-nav",{
   duration:1,
   top:0
-}).to('.nav-video',{
+},'a').to('.nav-video',{
   scale:1,
   ease:Power2
 }).from('.text-effect.flag',{
   y:30,
-  duration:1,
+  duration:0.4,
   stagger:0.1,
+  opacity:0
+}).from('.button-effect',{
   opacity:0
 }).from('.navbar-tagline > span',{
   x:20,
-  duration:1,
+  duration:0.4,
   opacity:0,
   stagger:0.1
 },"b").from('.social-link > div',{
   x:20,
-  duration:1,
+  duration:0.5,
   opacity:0,
   stagger:0.1
 },"b")
@@ -235,6 +237,9 @@ document.getElementById("open-navbar").addEventListener("click",function(){
 });
 
 document.getElementById("close-nav").addEventListener("click",function(){
-  t3.reverse()
+  t3.to("#open-nav",{
+    duration:1,
+    top:"-100%"
+  })
 });
 
